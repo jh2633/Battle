@@ -2,10 +2,18 @@ require 'spec_helper'
 require 'player'
 
 describe Player do
+  subject(:jon) {Player.new("jon")}
+  subject(:mertz) {Player.new("mertz")}
 
-  subject(:Jon) {Player.new("Jon")}
+  describe "#name" do
+    it "returns players name" do
+      expect(jon.name).to eq("jon")
+    end
+  end
 
-  it "returns players name" do
-    expect(subject.name).to eq("Jon")
+  describe "#hit_points" do
+    it "returns the hit points" do
+      expect(jon.hit_points).to eq described_class::DEFAULT_HIT_POINTS
+    end
   end
 end
