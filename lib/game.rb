@@ -11,6 +11,14 @@ attr_reader :player1, :player2, :current_player, :opponent
     @opponent = player2
   end
 
+  def self.instance
+    @game
+  end
+
+  def self.create_game(player1, player2)
+    @game = Game.new(player1, player2)
+  end
+
   def attack(opponent)
     opponent.reduce_hp
     opponent_dead(opponent)
