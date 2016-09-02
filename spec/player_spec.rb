@@ -3,7 +3,7 @@ require 'player'
 
 describe Player do
   subject(:jon) {Player.new("jon")}
-  subject(:mertz) {Player.new("mertz")}
+  subject(:murtz) {Player.new("murtz")}
 
   describe "#name" do
     it "returns players name" do
@@ -13,7 +13,7 @@ describe Player do
 
   describe "#hit_points" do
     it "returns the hit points" do
-      expect(jon.hit_points).to eq described_class::DEFAULT_HIT_POINTS
+      expect(jon.hp).to eq described_class::DEFAULT_HIT_POINTS
     end
   end
 end

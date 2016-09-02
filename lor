@@ -1,24 +1,5 @@
-[32m.[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
 
-Failures:
-
-  1) Attack reduce player 2 HP by 10
-     [31mFailure/Error: click_link("Ok")[0m
-     [31m[0m
-     [31mCapybara::ElementNotFound:[0m
-     [31m  Unable to find link "Ok"[0m
-     [36m# /Users/Murtz/.rvm/gems/ruby-2.2.3/gems/capybara-2.8.1/lib/capybara/node/finders.rb:44:in `block in find'[0m
-     [36m# /Users/Murtz/.rvm/gems/ruby-2.2.3/gems/capybara-2.8.1/lib/capybara/node/base.rb:85:in `synchronize'[0m
-     [36m# /Users/Murtz/.rvm/gems/ruby-2.2.3/gems/capybara-2.8.1/lib/capybara/node/finders.rb:33:in `find'[0m
-     [36m# /Users/Murtz/.rvm/gems/ruby-2.2.3/gems/capybara-2.8.1/lib/capybara/node/actions.rb:40:in `click_link'[0m
-     [36m# /Users/Murtz/.rvm/gems/ruby-2.2.3/gems/capybara-2.8.1/lib/capybara/session.rb:735:in `block (2 levels) in <class:Session>'[0m
-     [36m# /Users/Murtz/.rvm/gems/ruby-2.2.3/gems/capybara-2.8.1/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'[0m
-     [36m# ./spec/features/attack_spec.rb:13:in `block (2 levels) in <top (required)>'[0m
-
-Finished in 0.07459 seconds (files took 0.50135 seconds to load)
-[31m7 examples, 1 failure[0m
-
-Failed examples:
-
-[31mrspec ./spec/features/attack_spec.rb:10[0m [36m# Attack reduce player 2 HP by 10[0m
+Finished in 0.0679 seconds (files took 0.51853 seconds to load)
+[32m6 examples, 0 failures[0m
 
