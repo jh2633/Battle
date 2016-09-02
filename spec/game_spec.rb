@@ -10,4 +10,9 @@ describe Game do
     expect(murtz).to receive(:reduce_hp)
     game.attack(murtz)
   end
+
+  it "switches players" do
+    game.switch
+    expect(game.current_player).to eq(murtz)
+  end
 end
