@@ -9,6 +9,10 @@ class Player
     @hp = DEFAULT_HIT_POINTS
   end
 
+  def dead?
+    @hp == 0
+  end
+
   def reduce_hp
     @hp -= 10
   end

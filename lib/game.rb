@@ -13,6 +13,13 @@ attr_reader :player1, :player2, :current_player, :opponent
 
   def attack(opponent)
     opponent.reduce_hp
+    opponent_dead(opponent)
+  end
+
+  def opponent_dead(opponent)
+    if opponent.dead?
+      opponent.name + " Lost!"
+    end
   end
 
   def switch

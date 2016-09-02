@@ -1,5 +1,13 @@
 <h3><%= @game.opponent.name %> attacked <%= @game.current_player.name %></h3>
 
-<%= @game.current_player.name %>:  <%= @game.current_player.hp %>HP
+<% if @game.current_player.hp == 0%>
+<img src="https://media.giphy.com/media/l3fQf9ByIzJ3iLI5i/giphy.gif">
+<h1><%= @game.current_player.name %> Lost!</h1>
 
+
+
+
+<% else %>
+<%= @game.current_player.name %>:  <%= @game.current_player.hp %>HP
 <a href="/play">Switch</a>
+<% end %>
